@@ -1,0 +1,285 @@
+/* Фоновый градиент */
+
+.main_blog {
+    position: relative;
+    z-index: 1;
+}
+
+.main_blog::before {
+    content: "";
+    position: absolute;
+    top: 17%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(#EFF5FB 0%, #FFFFFF 60%);
+    z-index: -1;
+}
+
+/* Фильтры */
+.filter__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 42px;
+}
+
+.filter__button {
+    box-sizing: border-box;
+    padding: 6px 8px;
+    border-radius: 24px;
+    border: 1px solid #C1C5CD;
+    background-color: #FFFFFF;
+}
+
+.filter__button:hover {
+    border: 2px solid #16C8BB;
+    transition: border 0.5s ease;
+}
+
+/* Эмодзи в кнопках */
+.emodji::before {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    vertical-align: text-top;
+    margin-right: 5px;
+}
+
+.smile::before {
+    content: url("../img/svg/emodji-smile.svg");
+}
+
+.unicorn::before {
+    content: url("../img/svg/emodji-unicorn.svg");
+}
+
+/* Кнопки фильтров на картинке */
+.filter_appraisal,
+.filter_self,
+.filter_food {
+    position: relative;
+}
+
+.filter_appraisal img,
+.filter_self img,
+.filter_food img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.filter_self::before {
+    content: url("../img/svg/psevdo-self.svg");
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    margin: 8px 0 0 8px;
+}
+
+.filter_appraisal::after {
+    content: url("../img/svg/psevdo_appraisal.svg");
+    position: absolute;
+    top: 40px;
+    left: 0;
+    z-index: 3;
+    margin: 8px 0 0 8px;
+}
+
+.filter_food::before {
+    content: url("../img/svg/psevdo_food.svg");
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    margin: 8px 0 0 8px;
+}
+
+
+/* Настройка постов */
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin: 23px auto 0;
+}
+
+.content_style {
+    border: 1px solid #C1C5CD;
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+    padding: 0 16px 16px;
+    background-color: #FFFFFF;
+}
+
+.cards__top_content,
+.cards__tumbnail_content {
+    display: flex;
+    flex-direction: column;
+}
+
+.cards__top_content {
+    height: 240px;
+}
+
+.cards__tumbnail_content {
+    height: 220px;
+}
+
+.cards__top,
+.cards__tumbnails {
+    display: flex;
+    gap: 24px;
+    width: 100%;
+}
+
+.cards__tumbnails {
+    flex-wrap: wrap;
+}
+
+.cards__top_item:hover,
+.cards__tumbnail:hover {
+    transform: scale(1.005);
+    transition: transform 0.3s ease-in-out;
+}
+
+.cards__top_item {
+    width: 49%;
+}
+
+.cards__tumbnail {
+    flex-basis: calc((100% - 48px) / 3);
+}
+
+.cards__top_item img,
+.cards__tumbnail img {
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+p.preview {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 80px;
+}
+
+.author {
+    margin: 4px 0 8px;
+}
+
+.date {
+    margin-top: auto;
+    bottom: 0;
+    left: 0;
+    padding: 24px 0 0;
+}
+
+.cards_button {
+    width: 182px;
+    height: 48px;
+    background-color: #35B3A9;
+    border-radius: 4px;
+    border: none;
+    margin: 32px auto 96px;
+}
+
+/* Адаптивные стили */
+@media screen and (max-width: 1265px) {
+    .main_blog::before {
+        display: none;
+    }
+
+    .cards__tumbnail {
+        min-width: 304px;
+    }
+}
+
+@media screen and (max-width: 1210px) {
+    .cards__tumbnail_content {
+        height: 255px;
+    }
+
+    .cards_button {
+        margin: 11px auto 60px;
+    }
+}
+
+@media screen and (max-width: 1137px) {
+    .cards__tumbnail_content {
+        height: 265px;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    .cards__tumbnail {
+        flex-basis: calc((100% - 24px) / 2);
+    }
+
+    .cards_button {
+        margin: 11px auto 55px;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .cards__top {
+        flex-wrap: wrap;
+    }
+
+    .cards__top_item {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 673px) {
+    .cards__tumbnail {
+        flex-basis: 100%;
+    }
+
+    .filter__list {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .filter__list {
+        margin-top: 24px;
+    }
+
+    .cards {
+        margin: 16px auto 0;
+        gap: 16px;
+    }
+
+    .cards__top,
+    .cards__tumbnails {
+        gap: 16px;
+    }
+
+    .cards__tumbnails .cards__tumbnail:nth-last-child(-n+4) {
+        display: none;
+    }
+
+    .cards__tumbnail {
+        width: 100%;
+    }
+
+    .cards__top_content,
+    .cards__tumbnail_content {
+        height: 278px;
+    }
+}
+
+@media screen and (max-width: 345px) {
+    .cards__tumbnail,
+    .cards__top_item {
+        min-width: 280px;
+    }
+}

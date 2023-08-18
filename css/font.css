@@ -1,0 +1,273 @@
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Montserrat"),
+             url("../fonts/woff2/Montserrat-Regular.woff2") format("woff2"),
+             url("../fonts/woff/Montserrat-Regular.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    src: local("Montserrat"),
+             url("../fonts/woff2/Montserrat-Medium.woff2") format("woff2"),
+             url("../fonts/woff/Montserrat-Medium.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    src: local("Montserrat"),
+             url("../fonts/woff2/Montserrat-SemiBold.woff2") format("woff2"),
+             url("../fonts/woff/Montserrat-SemiBold.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Montserrat"),
+             url("../fonts/woff2/Montserrat-Bold.woff2") format("woff2"),
+             url("../fonts/woff/Montserrat-Bold.woff") format("woff");
+  }
+
+body {
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.navigation__item a {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.25px;
+    color:  #333333;
+}
+
+.button_style,
+.footer__top_links {
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.navigation__button {
+    color:  #03B2A5;
+}
+
+.cards_button,
+.footer__top_links a,
+.footer__top_actions p {
+    color:  #FFF; 
+}
+
+.breadcrumb__list a {
+    color: rgba(51, 51, 51, 0.70);
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.25px;
+}
+
+h1,
+h3.form__question {
+    font-size: 48px;
+    font-weight: 700;
+    color:  #333333;
+    line-height: 56px;
+}
+
+h2,
+.footer__action,
+.sidebar__video h4 {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+h3,
+.sidebar__video span, 
+p.price,
+.burger_menu-list li {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+h4,
+.content h2,
+.article_button {
+    color: #333333;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+a {
+    color:  #333333;   
+}
+
+.filter__button {
+    font-family: Montserrat, sans-serif;
+    color:  #333333;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.author {
+    color: #494949;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.25px;
+}
+
+.date {
+    color: #868686;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.25px;
+}
+
+.footer__top_links {
+    line-height: 24px;
+}
+
+p.footer__agreement {
+    color: rgba(225, 225, 225, 0.7);
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.25px;
+}
+
+.footer__bottom a,
+.article_author p {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.footer__bottom a {
+    color: rgba(225, 225, 225, 0.7);
+}
+
+/* 2 лист */
+.article p,
+.article ul {
+    color:  #333333;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.article_author p,
+.hashtag a,
+.sidebar__schedule p,
+.sidebar__psyhologyst-field li,
+p.description {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.form p {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; 
+}
+
+.article_author p {
+    color: #494949;
+}
+
+.hashtag a {
+    color: #2963A3;
+}
+
+p.benefits_cite,
+p.anxiety_cite {
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+p.anxiety_cite {
+    text-align: center;
+}
+
+.benefits cite {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+figcaption {
+    color: #868686;
+    line-height: 18.2px;
+    letter-spacing: 0.25px;
+}
+
+.sidebar__schedule h4 {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.sidebar__psyhologyst-name h4 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+.sidebar__psyhologyst-name p {
+    font-weight: 600;
+}
+
+.sidebar__psyhologyst-experience p {
+    color: #A2A7B1;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.sidebar__video h4 {
+    color: #2963A3;
+}
+
+p.price {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+@media screen and (max-width: 440px){
+    h1 {
+    font-size: 32px;
+    line-height: 40px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    h1 {
+    font-size: 24px;
+    line-height: 32px;
+    }
+}

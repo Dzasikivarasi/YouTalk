@@ -1,0 +1,713 @@
+/* Фоновые изображения */
+main {
+    background-image: url("../img/png/background-anxiety.png"), url("../img/png/background-form-2.png");
+    background-repeat: no-repeat;
+    background-position: center right, 100% 97%;
+}
+
+/* Breadcrumbs */
+.breadcrumb__list {
+    display: flex;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 90vw;
+    overflow-x: auto;
+}
+
+/* Основной блок */
+.article {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.main_content {
+    width: 690px;
+}
+
+.article_author {
+    display: flex;
+    gap: 8px;
+    margin: 16px 0 24px;
+}
+
+.article_author p:not(:first-child)::before {
+    content: "\22C5";
+    display: inline-block;
+    vertical-align: bottom;
+    margin-right: 8px;
+    color: #494949;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.content h2 {
+    margin-top: 24px;
+}
+
+ul.list-style {
+    list-style-type: none;
+}
+
+ul.list-style>li {
+    position: relative;
+    padding-left: 32px;
+}
+
+.content__list li {
+    margin: 14px;
+}
+
+.content__under-list li {
+    margin: 8px;
+}
+
+ul.list-style>li:before {
+    content: '\2022';
+    font-size: 40px;
+    vertical-align: sub;
+    color: #03B2A5;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateY(-10%);
+    padding-right: 16px;
+}
+
+.content a {
+    text-decoration: underline;
+    padding-left: 0;
+}
+
+.article h3 {
+    margin: 24px 0 16px;
+}
+
+.benefits blockquote {
+    margin-top: 40px;
+    background-color: #F3F7FE;
+    padding: 24px;
+    border-radius: 16px;
+}
+
+p.benefits_cite {
+    background-image: url("../img/png/background-cite-1.png");
+    background-repeat: no-repeat;
+    background-position: top left;
+    padding: 10px 0;
+}
+
+.anxiety figure img {
+    width: 100%;
+}
+
+.anxiety li {
+    padding-right: 32px;
+}
+
+.stress ul.list-style>li:not(:first-child),
+.anxiety ul.list-style>li:not(:first-child) {
+    padding-top: 16px;
+}
+
+.stress ul.list-style>li:not(:first-child)::before,
+.anxiety ul.list-style>li:not(:first-child)::before {
+    padding-top: 16px;
+}
+
+.anxiety figure {
+    padding: 24px 0;
+}
+
+figcaption {
+    padding-top: 16px;
+}
+
+.anxiety blockquote {
+    margin: 24px auto;
+
+}
+
+p.anxiety_cite {
+    width: 485px;
+    background-image: url("../img/png/background-cite-2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 24px 0 48px;
+    margin: 0 auto;
+}
+
+.anxiety__container,
+.stress__container {
+    display: flex;
+    gap: 24px;
+    margin: 24px 0;
+}
+
+.anxiety__exersize,
+.stress__exersize,
+.practice__exersize {
+    margin: 24px 0;
+    background-color: #FEFAEC;
+    border-radius: 16px;
+    padding: 24px;
+    box-sizing: border-box;
+}
+
+.anxiety__exersize p,
+.stress__exersize p,
+.practice__exersize p {
+    margin-top: 10px;
+}
+
+.anxiety__exersize {
+    background-color: #FEFAEC;
+}
+
+.stress__exersize {
+    background-color: #FFF3EB;
+}
+
+.practice__exersize {
+    background-color: rgba(3, 178, 165, 0.1)
+}
+
+.anxiety__exersize h4 {
+    margin-bottom: 10px;
+}
+
+.stress__illustrations {
+    width: 691px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 24px;
+}
+
+.stress__illustrations-left,
+.stress__illustrations-right {
+    display: flex;
+    flex-direction: column;
+    width: 333px;
+    gap: 24px;
+}
+
+.practice {
+    display: flex;
+    flex-direction: column;
+}
+
+.practice img {
+    width: 178.75px;
+    margin: 24px auto;
+}
+
+.hashtag__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 48px;
+}
+
+ul.hashtag__list li:not(:first-child):not(:nth-child(5))::before {
+    content: "\22C5";
+    display: inline-block;
+    vertical-align: bottom;
+    color: #2963A3;
+    margin-right: 8px;
+}
+
+.form {
+    border-top: 1px solid rgba(222, 222, 222, 1);
+}
+
+h3.form__question {
+    margin: 72px auto 24px 0;
+    width: 349px;
+}
+
+.form p {
+    width: 327px;
+    margin-bottom: 32px;
+}
+
+.article_button {
+    background-color: #35B3A9;
+    height: 48px;
+    color: #FFFFFF;
+    border-radius: 4px;
+    border: none;
+}
+
+/* Форма */
+.form button {
+    margin-bottom: 158px;
+    width: 238px;
+}
+
+.form {
+    background-image: url("../img/png/background-form-1.png");
+    background-repeat: no-repeat;
+    background-position: center right;
+    margin-right: 65px;
+}
+
+/* Футер */
+footer {
+    position: relative;
+}
+
+footer::before {
+    content: "";
+    position: absolute;
+    top: -17%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(#EFF5FB 0%, #FFFFFF 60%);
+    z-index: -1;
+}
+
+/* Sidebar */
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    margin-top: 89px;
+    gap: 24px;
+    width: 282px;
+    margin-left: 24px;
+    box-sizing: border-box;
+}
+
+.sidebar__schedule {
+    background-color: #E6F0FD;
+    border-radius: 16px;
+    box-sizing: border-box;
+    padding: 24px;
+}
+
+.sidebar__schedule h4 {
+    margin: 35px 0 11px;
+    text-align: center;
+}
+
+.sidebar__schedule p {
+    text-align: center;
+}
+
+.sidebar__schedule button,
+.sidebar__psyhologyst button {
+    width: 100%;
+    margin-top: 22px;
+}
+
+.sidebar__schedule img {
+    width: 100%;
+}
+
+.sidebar__psyhologyst {
+    position: relative;
+    border-radius: 16px;
+    border: 1px solid #DEDEDE;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 24px;
+}
+
+.sidebar__psyhologyst img {
+    border-radius: 100%;
+}
+
+.sidebar__psyhologyst-experience {
+    display: flex;
+    gap: 8px;
+}
+
+.sidebar__psyhologyst-experience span {
+    color: #A2A7B1;
+    font-size: 30px;
+}
+
+.sidebar__psyhologyst-name h4 {
+    margin-top: 16px;
+}
+
+.sidebar__psyhologyst-experience {
+    margin: 5px auto 16px;
+    text-align: center;
+}
+
+.sidebar__psyhologyst-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 1px solid rgba(225, 225, 225, 1);
+}
+
+.sidebar__psyhologyst-field h4,
+.sidebar__psyhologyst-field ul {
+    text-align: left;
+}
+
+.sidebar__psyhologyst-field h4 {
+    margin: 16px 0 8px;
+}
+
+.sidebar__psyhologyst-field li {
+    margin-bottom: 8px;
+}
+
+.sidebar__psyhologyst::before {
+    content: url("../img/svg/psyhologyst-text.svg");
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    margin: 16px 0 0 16px;
+}
+
+.sidebar__psyhologyst::after {
+    content: url("../img/svg/psyhologyst-video.svg");
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    margin: 48px 0 0 16px;
+}
+
+.sidebar__video {
+    border-radius: 24px;
+    border: 1px solid #DEDEDE;
+    box-sizing: border-box;
+    padding: 32px 54px 32px 32px;
+    background-image: url("../img/png/sidebar-2.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+.sidebar__video button {
+    padding: 12px 23px;
+}
+
+.sidebar__video p {
+    margin: 16px 0;
+}
+
+.sidebar__schedule,
+.sidebar__psyhologyst,
+.sidebar__video {
+    width: 100%;
+}
+
+.sidebar__present-card {
+    height: 292px;
+    border-radius: 16px;
+    background-image: url("../img/svg/card-illustrate.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Адаптивные стили */
+
+@media screen and (max-width: 1040px) {
+    main {
+        background-image: none;
+    }
+
+    .sidebar {
+        width: 222px;
+    }
+
+    .main_content {
+        width: 714px;
+    }
+
+    .sidebar__schedule {
+        padding: 24px 20px;
+    }
+
+    .content__list.list-style>li:not(:first-child):not(:last-child) {
+        display: none;
+    }
+
+    .sidebar__video {
+        padding: 24px;
+        background-image: url("../img/png/sidebar-2.png");
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        background-size: 100% auto;
+    }
+
+    .sidebar__present-card {
+        height: 292px;
+        border-radius: 16px;
+    }
+
+    .form,
+    .hashtag,
+    footer::before {
+        display: none;
+    }
+
+    .article_author p:not(:first-child)::before {
+        display: none;
+    }
+
+    .article_author p::after {
+        content: "\22C5";
+        display: inline-block;
+        vertical-align: bottom;
+        margin-left: 8px;
+        color: #494949;
+    }
+
+    .article_author::after {
+        content: "Self";
+        display: inline-block;
+        vertical-align: bottom;
+        color: #2963A3;
+        cursor: pointer;
+    }
+
+    .stress__illustrations {
+        width: 714px;
+    }
+
+    .stress__illustrations-left,
+    .stress__illustrations-right {
+        width: 345px;
+    }
+
+    .sidebar__present-card {
+        box-shadow: inset 0px 20px 30px rgba(255, 255, 255, 0.5);
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .article {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        display: grid;
+        grid-template-columns: 356px 356px;
+        grid-template-rows: 481px 248px;
+        gap: 16px;
+        margin: 0 0 60px;
+    }
+
+    .stress__illustrations {
+        gap: 16px;
+    }
+
+    .main_content,
+    .stress__illustrations {
+        width: 728px;
+    }
+
+    .sidebar__schedule {
+        display: flex;
+        flex-direction: column;
+        padding: 22px 24px 14px;
+    }
+
+    .sidebar__schedule img {
+        width: 257px;
+        height: 206px;
+        align-self: center;
+    }
+
+    .sidebar__psyhologyst button {
+        width: 250px;
+        margin-top: 8px;
+    }
+
+    .sidebar__schedule button {
+        margin-top: 18px;
+    }
+
+    .sidebar__present-card {
+        background-image: url("../img/svg/card-illustrate-horizontal.svg");
+        height: auto;
+    }
+
+    .sidebar__video {
+        padding: 25px 20px 4px;
+        background-image: url("../img/png/sidebar-2-3.png");
+        background-repeat: no-repeat;
+        background-position: right bottom;
+    }
+
+    .sidebar__video p {
+        margin: 14px 0;
+    }
+
+    .stress__illustrations-left,
+    .stress__illustrations-right {
+        width: 356px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .main_content,
+    .stress__illustrations {
+        width: 92.5vw;
+    }
+
+    .stress__illustrations-left,
+    .stress__illustrations-right {
+        width: 44.7vw;
+    }
+
+    .stress__illustrations img {
+        width: auto;
+        height: auto;
+    }
+
+    .sidebar {
+        display: grid;
+        grid-template-columns: 44.7vw 44.7vw;
+        grid-template-rows: 64% 34%;
+        gap: 16px;
+        margin: 0 0 60px;
+    }
+
+    .sidebar__schedule button,
+    .sidebar__psyhologyst button {
+        height: 48px;
+    }
+
+    .sidebar__schedule h4 {
+        margin: 24px 0 11px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 695px) {
+    .sidebar {
+        grid-template-rows: 67% 33%;
+    }
+
+    .sidebar__psyhologyst button {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .sidebar {
+        display: flex;
+        flex-direction: column;
+        width: 92.5vw;
+        height: auto;
+        margin: 0 0 129px;
+    }
+
+    .sidebar__schedule button,
+    .sidebar__psyhologyst button {
+        height: 48px;
+        width: 50%;
+        align-self: center;
+    }
+
+    .sidebar__video {
+        padding: 25px 20px 4px;
+        background-image: url("../img/png/sidebar-2-3.png");
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        border-radius: 16px;
+        background-size: 70%;
+    }
+
+    .sidebar__present-card {
+        background-image: url("../img/svg/card-illustrate-horizontal.svg");
+        height: 292px;
+        width: 92.5vw;
+        background-size: cover;
+    }
+
+    .stress__container {
+        flex-direction: column;
+    }
+
+    .sidebar__psyhologyst {
+        padding: 24px 62px 36px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .sidebar {
+        width: 100%;
+    }
+
+    .anxiety__exersize,
+    .stress__exersize,
+    .practice__exersize {
+        padding: 16px;
+    }
+
+    .main_content {
+        width: 90vw;
+        box-sizing: border-box;
+    }
+
+    .anxiety__container {
+        flex-direction: column;
+    }
+
+    .anxiety__container img {
+        width: 374px;
+        height: auto;
+        align-self: center;
+    }
+
+    .stress__illustrations {
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .stress__illustrations-left,
+    .stress__illustrations-right,
+    p.anxiety_cite,
+    .sidebar__present-card {
+        width: 90vw;
+    }
+
+    p.anxiety_cite {
+        padding: 24px 0;
+    }
+
+    .sidebar__schedule button,
+    .sidebar__psyhologyst button {
+        width: 100%;
+    }
+
+    .sidebar__video {
+        padding: 25px;
+        background-size: 90vw;
+    }
+
+    .content__list li {
+        margin: 8px 0;
+    }
+
+    .content h2 {
+        margin: 24px 0 16px;
+    }
+}
+
+@media screen and (max-width: 422px) {
+    .anxiety__container img {
+        width: 100%;
+        height: auto;
+    }
+
+    .sidebar__psyhologyst {
+        padding: 24px;
+    }
+}

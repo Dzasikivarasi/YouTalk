@@ -1,0 +1,360 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul:not(.list-style) {
+    list-style: none;
+}
+
+.no-wrap {
+    white-space: nowrap;
+}
+
+/* Обертка */
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
+/* Хэдер */
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 14px 0;
+}
+
+.header {
+    border-bottom: 2px solid #EFF5FB;
+}
+
+.navigation__left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.navigation__list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.navigation__list.dropdown {
+    margin-right: 54px;
+}
+
+.navigation__button {
+    margin: 0;
+    width: 230px;
+    height: 48px;
+    border-radius: 4px;
+    background: #E3F5F5;
+    border: none;
+    padding: 14px 20px;
+    box-sizing: border-box;
+}
+
+.navigation__button:hover {
+    background: #03B2A5;
+    color: #E3F5F5;
+    transition: 0.3s;
+}
+
+.burger_menu,
+.burger_menu-list {
+    display: none;
+}
+
+/* Стрелка в хэдере */
+.dropdown::after {
+    content: url("../img/png/arrow-down.png");
+    width: 14px;
+    height: 14px;
+    padding-left: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Заголовки */
+h1 {
+    margin-top: 45px;
+}
+
+h2 {
+    margin-top: 16px;
+}
+
+/* Хлебные крошки */
+.breadcrumb__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+ul.breadcrumb__list li:not(:first-child)::before {
+    content: url("../img/png/arrow-right.png");
+    display: inline-block;
+    vertical-align: bottom;
+    margin-right: 14px;
+}
+
+
+/* Футер */
+
+.footer {
+    background-color: #2963A3;
+}
+
+.footer__top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 40px;
+    border-bottom: 1px solid rgba(157, 157, 157, 0.30);
+}
+
+.footer__top_links {
+    display: flex;
+    flex-direction: row;
+    max-width: 310px;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.footer__top_links ul {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer__top_actions {
+    max-width: 450px;
+}
+
+.footer__top_actions form {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.footer__input {
+    width: 384px;
+    height: 48px;
+    border-radius: 4px;
+    border: 1px solid rgba(157, 157, 157, 0.20);
+    box-sizing: border-box;
+    padding: 14px 80px 14px 16px;
+}
+
+.footer__input:focus {
+    outline: none;
+}
+
+.footer-button {
+    position: absolute;
+    width: 64px;
+    height: 48.5px;
+    right: 14%;
+    top: 49%;
+    transform: translateY(-49%);
+    border-radius: 4px;
+    background: #16C8BB;
+    border: none;
+    z-index: 2;
+}
+
+.footer__agreement {
+    margin-top: 10px;
+    margin-bottom: 38px;
+}
+
+.footer__top_socials {
+    max-width: 221px;
+}
+
+.footer__top_networks {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 16px;
+}
+
+.footer__bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 50px;
+    margin-top: 20px;
+    padding-bottom: 22px;
+}
+
+/* Поведение кнопок при наведении курсора */
+.cards_button:hover,
+.article_button:hover
+ {
+    background: #E3F5F5;
+    color: #03B2A5;
+    transition: 0.3s;
+}
+
+
+@media screen and (max-width: 1265px) {
+    .container {
+        width: 100%;
+        padding: 0 30px;
+    }
+    .navigation__button {
+        margin-left: 30px;
+    }
+}
+
+@media screen and (max-width: 1127px) {
+    .navigation__left {
+        gap: 30px;
+    }
+    .navigation__list {
+        gap: 16px;
+    }
+    .navigation__button {
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    .footer__top {
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: flex-start;
+        padding-bottom: 27px;
+    }
+    .navigation__list,
+    .navigation__button {
+        display: none;
+    }
+    .container {
+        width: 100%;
+        padding: 0 20px;
+    }
+    .footer__top {
+        padding-top: 35px;
+    }
+    .burger_menu-list {
+        position: absolute;
+        z-index: 3;
+        width: 150px;
+        cursor: pointer;
+        top: 45px;
+        right: 1px;
+        background-color: #FFFFFF;
+        padding: 0 20px 20px;
+        box-shadow: 0px 0px 5px 0px #C1C5CD;
+    }
+    .burger_menu-list li:hover {
+        text-decoration: underline;
+        text-decoration-color: #C1C5CD;
+
+    }
+    .burger_menu {
+        display: block;
+    }
+    .burger_menu:hover .burger_menu-list {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .footer__input {
+        width: 375px;
+    }
+    .footer-button {
+        right: 6%;
+    }
+    .footer__top_actions {
+        max-width: 400px;
+    }
+  }
+
+  @media screen and (max-width: 716px) {
+    .footer__top_links {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 691px) {
+    .footer__top {
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: center;
+    }
+
+    .footer__top_links {
+        max-width: 400px;
+    }
+
+    .footer__top_socials {
+        max-width: 400px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .footer__bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 20px;
+        padding-bottom: 37px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .footer__input {
+        width: 90%;
+    }
+    .footer-button {
+        right: 2%;
+    }
+    .breadcrumb__list {
+        margin-top: 16px;
+    }
+    h1 {
+        margin-top: 32px;
+    }
+    .footer__agreement {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .footer__top_networks {
+        margin-top: 20px;
+    }
+    p.footer__agreement {
+        margin-top: 12px;
+    }
+ }
+
+ @media screen and (max-width: 345px) {
+    .container {
+        padding: 0 16px;
+    }
+    h1 {
+        margin-top: 24px;
+    }
+    .footer {
+        min-width: 302px;
+    }
+}
